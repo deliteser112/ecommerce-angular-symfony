@@ -1,0 +1,16 @@
+.product-list {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    }
+
+.product-card {
+    width: 300px;
+
+    .px-8 {
+        padding: 0 8px 0 8px;
+    }
+}

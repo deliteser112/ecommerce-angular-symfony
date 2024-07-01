@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="D:\homeTask\ecommerce-angular-symfony\dashnex-test-php\phpunit.xml.dist" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.007627">
+    <testsuite name="Project Test Suite" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.007627">
+      <testsuite name="App\Tests\Unit\CartTest" file="D:\homeTask\ecommerce-angular-symfony\dashnex-test-php\tests\Unit\CartTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.007627">
+        <testcase name="testRemoveItem" file="D:\homeTask\ecommerce-angular-symfony\dashnex-test-php\tests\Unit\CartTest.php" line="25" class="App\Tests\Unit\CartTest" classname="App.Tests.Unit.CartTest" assertions="1" time="0.006117"/>
+        <testcase name="testAddItem" file="D:\homeTask\ecommerce-angular-symfony\dashnex-test-php\tests\Unit\CartTest.php" line="12" class="App\Tests\Unit\CartTest" classname="App.Tests.Unit.CartTest" assertions="2" time="0.001509"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

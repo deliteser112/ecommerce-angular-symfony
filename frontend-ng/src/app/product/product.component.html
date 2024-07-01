@@ -1,0 +1,15 @@
+<mat-card *ngIf="product">
+    <img mat-card-image [src]="'http://127.0.0.1:8000' + product.image" alt="{{product.title}}">
+    <mat-card-title class="px-16">{{ product.title }}</mat-card-title>
+    <mat-card-subtitle class="px-16">{{ product.price | currency }}</mat-card-subtitle>
+    <mat-card-content>
+        <p>{{ product.description }}</p>
+        <mat-form-field appearance="fill">
+            <mat-label>Quantity</mat-label>
+            <input matInput type="number" [(ngModel)]="amount" min="1">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="addToCart()">Add to Cart</button>
+    </mat-card-actions>
+</mat-card>

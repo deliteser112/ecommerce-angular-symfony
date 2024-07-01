@@ -1,0 +1,14 @@
+mat-card {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 36px;
+
+    img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .px-16 {
+        padding: 0 16px 0 16px;
+    }
+}

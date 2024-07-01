@@ -1,0 +1,30 @@
+version: "3.4"
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/srv/app
+      - php_socket:/var/run/php
+  php:
+    build:
+      context: .
+      target: app_php
+      args:
+        SYMFONY_VERSION: ${SYMFONY_VERSION:-}
+        STABILITY: ${STABILITY:-stable}
+    restart: unless-stopped
+    volumes:
+      - php_socket:/var/run/php
+    healthcheck:
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 30s
+    environment: []
+
+volumes:
+  php_socket:

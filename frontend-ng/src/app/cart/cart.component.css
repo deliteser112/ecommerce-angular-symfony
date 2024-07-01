@@ -1,0 +1,38 @@
+.cart-list {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.cart-item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+
+    .cart-image {
+        height: 180px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .cart-content {
+        padding: 0 16px;
+
+        mat-card-content {
+            padding: 0;
+        }
+
+        mat-card-actions {
+            padding: 0;
+        }
+    }
+}
+
+.total-cost {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
